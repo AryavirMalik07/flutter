@@ -65,17 +65,18 @@ class _QuizState extends State<Quiz> {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(colors: [
-                Color.fromARGB(255, 62, 24, 106),
-                Color.fromARGB(255, 72, 19, 141)
-              ], begin: Alignment.topLeft, end: Alignment.bottomRight),
-            ),
-            child: Center(
-              child: activeScreen == 'start-screen'
-                  ? StartScreen(switchScreen)
-                  : const QuestionsScreen(),
-            )),
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(colors: [
+              Color.fromARGB(255, 62, 24, 106),
+              Color.fromARGB(255, 72, 19, 141)
+            ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+          ),
+          child: Center(
+            child: activeScreen == 'start-screen'
+                ? StartScreen(switchScreen)
+                : const QuestionsScreen(),
+          ),
+        ),
       ),
     );
   }
