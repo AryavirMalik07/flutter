@@ -4,6 +4,10 @@ import 'package:instagram/chat_component.dart';
 class ChatScreen extends StatelessWidget {
   ChatScreen(this.switchScreen, {super.key});
   void Function() switchScreen;
+
+  // final List<String> imgSource = [
+
+  // ];
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -12,7 +16,7 @@ class ChatScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const SizedBox(
-              height: 30,
+              height: 40,
             ),
             Padding(
               padding: const EdgeInsets.all(6.0),
